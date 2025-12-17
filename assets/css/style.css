@@ -62,3 +62,113 @@
     font-size: 1rem;
   }
 }
+
+/* FLOOD RESPONSE SECTION */
+.flood-response {
+  background-image: url('../images/pattern.svg');
+  background-size: 100% 100%;
+  /* background-position: center; */
+  position: relative;
+  z-index: 999;
+  /* padding: 100px 0; */
+}
+
+.flood-overlay {
+  /* background: 0 0 0 0.9; */
+  padding: 80px 0;
+}
+
+.flood-title {
+  color: #035a01;
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.flood-text {
+  color: #000000;
+  font-size: 1.05rem;
+  line-height: 1.8;
+}
+
+/* Reuse donate button but allow section tweak */
+.flood-response .donate-btn {
+  background-color: #f4b400;
+  color: #000;
+  padding: 12px 40px;
+  font-size: 1rem;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.flood-response .donate-btn:hover {
+  background-color: #ffffff;
+  color: #000;
+  transform: translateY(-3px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .flood-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .flood-text {
+    text-align: center;
+  }
+
+  .flood-response .donate-btn {
+    display: inline-block;
+    margin: 0 auto;
+  }
+}
+.fade-up {
+  opacity: 0;
+  transform: translateY(40px);
+  transition: all 0.8s ease;
+}
+
+.fade-up.animate {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* CARDS SECTION */
+.cards-section {
+  background-color: #f8f9fa; /* light grey background */
+}
+
+.cards-heading {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #212529;
+}
+
+/* Card image with rounded corners */
+.cards-section .card-img-top {
+  height: 200px;
+  object-fit: cover;
+  border-radius: 1rem; /* radius on all sides */
+  transition: transform 0.3s ease;
+}
+
+.cards-section .card:hover .card-img-top {
+  transform: scale(1.05);
+}
+
+/* Card body */
+.cards-section .card-body {
+  text-align: center;
+  padding-top: 1rem; /* space between image and text */
+}
+
+.cards-section .card-title {
+  font-size: 1.80rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.cards-section .card-text {
+  font-size: 0.95rem;
+  color: #555;
+}
