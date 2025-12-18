@@ -2,6 +2,10 @@
 .hero-slider,
 .hero-slide {
   width: 100%;
+  
+}
+.hero-slide {
+  width: 100%;
   height: 100vh;
 }
 
@@ -171,4 +175,277 @@
 .cards-section .card-text {
   font-size: 0.95rem;
   color: #555;
+}
+/* DONATE CTA SECTION */
+.donate-cta {
+  background-image: url('../images/pattern.svg');
+  background-size: 100% 100%;
+  background-position: center;
+  position: relative;
+  /* padding: 100px 0; */
+}
+
+.cta-overlay {
+  background: #0F6742; /* green overlay */
+  /* opacity: 50%; */
+  padding: 80px 0;
+}
+
+.cta-title {
+  color: #90E114;
+  font-size: 0.9rem;
+  font-weight: 600;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.cta-text {
+  color: #e9f5ee;
+  font-size: 2.0rem;
+  max-width: 900px;
+  margin: 0 auto 25px;
+  line-height: 1.7;
+  font-weight: 700;
+}
+
+/* Button (reuse global donate button) */
+.donate-cta .donate-btn {
+  background-color: #f4b400;
+  color: #000;
+  padding: 12px 40px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.donate-cta .donate-btn:hover {
+  background-color: #ffffff;
+  color: #000;
+  transform: translateY(-3px);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .cta-title {
+    font-size: 1.2rem;
+  }
+
+  .cta-text {
+    font-size: 0.95rem;
+    padding: 0 15px;
+  }
+}
+.cta-animate {
+  opacity: 0;
+  transform: scale(0.95);
+  transition: all 0.8s ease;
+}
+
+.cta-animate.animate {
+  opacity: 1;
+  transform: scale(1);
+}
+/* IMPACT CARDS */
+.impact-card {
+  height: 600px;
+  background-image: var(--bg);
+  background-size: 100% 100%;
+  background-position: center;
+  border-radius: 16px;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.4s ease;
+}
+
+.impact-card:hover {
+  transform: translateY(-8px);
+}
+
+/* Overlay */
+.impact-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.65),
+    rgba(0, 0, 0, 0.2)
+  );
+  padding: 25px;
+  color: #fff;
+}
+
+/* Text at top */
+.impact-overlay h5 {
+  font-size: 1.9rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+  margin-top: 50px;
+}
+
+.impact-overlay p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  max-width: 90%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .impact-card {
+    height: 320px;
+  }
+}
+
+/* OUTER GREEN SECTION */
+.donation-info-section {
+  background-color: #329A51;
+  padding: 50px 0;
+}
+
+/* WHITE / CREAM BOX */
+.donation-box {
+  background-color: #f6f9ec;
+  border-radius: 24px;
+  overflow: hidden;
+}
+
+/* LEFT SIDE */
+.donation-text {
+  padding: 50px 40px;
+}
+
+.main-text {
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 1.2;
+  color: #222;
+  margin-bottom: 20px;
+}
+
+.bank-details p {
+  margin: 0 0 6px;
+  font-size: 1.15rem;
+  color: #444;
+}
+
+/* BLACK DONATE BUTTON */
+.donate-dark-btn {
+  margin-top: 15px;
+  background-color: #222;
+  color: #fff;
+  padding: 12px 32px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.donate-dark-btn:hover {
+  background-color: #000;
+  color: #fff;
+  transform: translateY(-2px);
+}
+
+/* RIGHT IMAGE */
+.donation-image {
+  position: relative;
+}
+
+.donation-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* PLAY BUTTON */
+.play-btn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 94px;
+  height: 94px;
+  /* background-color: #fff; */
+  color: #329A51;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 38px;
+  cursor: pointer;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+}
+
+/* RESPONSIVE */
+@media (max-width: 992px) {
+  .donation-text {
+    padding: 40px 30px;
+  }
+
+  .main-text {
+    font-size: 1.6rem;
+  }
+
+  .donation-image {
+    height: 300px;
+  }
+}
+/* WHY AKHUWAT SECTION */
+.why-akhuwat {
+  background-color: #0f6b44;
+  padding: 80px 0;
+}
+
+/* Heading */
+.why-title {
+  color: #ffffff;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+/* View Roles Button */
+.view-roles-btn {
+  background-color: #ffffff;
+  color: #000;
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.view-roles-btn:hover {
+  background-color: #f4f4f4;
+  transform: translateY(-2px);
+}
+
+/* Cards */
+.why-card img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 24px;
+  margin-bottom: 25px;
+}
+
+.why-card h5 {
+  color: #ffffff;
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.why-card p {
+  color: #d9efe4;
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .why-title {
+    font-size: 2rem;
+  }
+
+  .why-card img {
+    height: 220px;
+  }
 }
