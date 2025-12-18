@@ -296,6 +296,118 @@
 
   </div>
 </section>
+<!-- MEDIA SECTION -->
+<section class="media-section">
+  <div class="container py-5">
+
+    <!-- Top row: heading + view all -->
+    <div class="media-top">
+      <div>
+        <h2 class="media-title mb-2">Media</h2>
+        <p class="media-desc mb-0">
+          Each month, Akhuwat extends its vision of poverty alleviation and
+          achieves new milestones under its various programs.
+        </p>
+      </div>
+
+      <a href="#" class="media-viewall">View all</a>
+    </div>
+
+    <!-- Cards slider -->
+    <div class="media-slider-wrap mt-4">
+      <div class="media-slider" id="mediaSlider">
+
+        <!-- Card 1 -->
+        <article class="media-card">
+          <img src="assests/images/media-1.jpg" class="media-img" alt="">
+          <div class="media-body">
+            <span class="media-tag">Blog</span>
+            <h3 class="media-card-title">Six Lessons We Learnt from Giving Interest-free Loans</h3>
+            <p class="media-card-text">
+              The one question we keep trying to answer in fresh, creative ways:
+              How could we enable the underprivileged individuals...
+            </p>
+            <a href="#" class="media-read">Read More</a>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="media-card">
+          <img src="assests/images/media-2.jpg" class="media-img" alt="">
+          <div class="media-body">
+            <span class="media-tag">Blog</span>
+            <h3 class="media-card-title">Mawakhat Launch &amp; Exhibition Event</h3>
+            <p class="media-card-text">
+              Akhuwat recently launched its new book Mawakhat: Stories of Resilience
+              and Rebuilding, a compelling collection...
+            </p>
+            <a href="#" class="media-read">Read More</a>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="media-card">
+          <img src="assests/images/media-3.jpg" class="media-img" alt="">
+          <div class="media-body">
+            <span class="media-tag">Blog</span>
+            <h3 class="media-card-title">Redefining Possibilities: Empowering Differently Abled Heroes</h3>
+            <p class="media-card-text">
+              Through its interest-free loan program, Akhuwat has disbursed over PKR 1.3 billion...
+            </p>
+            <a href="#" class="media-read">Read More</a>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="media-card">
+          <img src="assests/images/media-4.jpg" class="media-img" alt="">
+          <div class="media-body">
+            <span class="media-tag">Blog</span>
+            <h3 class="media-card-title">47 Students of Akhuwat College Kasur Secure Admission</h3>
+            <p class="media-card-text">
+              Akhuwat’s PATH (Poverty Alleviation Through Higher Education) Program is making...
+            </p>
+            <a href="#" class="media-read">Read More</a>
+          </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="media-card">
+          <img src="assests/images/media-5.jpg" class="media-img" alt="">
+          <div class="media-body">
+            <span class="media-tag">Videos</span>
+            <h3 class="media-card-title">Akhuwat College for Women, Chakwal</h3>
+            <p class="media-card-text">
+              Providing quality education across geographical boundaries to those who need it most...
+            </p>
+            <a href="#" class="media-read">Read More</a>
+          </div>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="media-card">
+          <img src="assests/images/media-6.jpg" class="media-img" alt="">
+          <div class="media-body">
+            <span class="media-tag">Blog</span>
+            <h3 class="media-card-title">Community Impact Stories</h3>
+            <p class="media-card-text">
+              New milestones and powerful stories from communities transforming through support...
+            </p>
+            <a href="#" class="media-read">Read More</a>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- arrows under cards -->
+      <div class="media-arrows">
+        <button class="media-arrow" type="button" id="mediaPrev" aria-label="Previous">←</button>
+        <button class="media-arrow" type="button" id="mediaNext" aria-label="Next">→</button>
+      </div>
+    </div>
+
+  </div>
+</section>
 
 
 
@@ -328,6 +440,31 @@
     });
   })();
 </script>
+<script>
+  (function () {
+    const slider = document.getElementById("mediaSlider");
+    const prev = document.getElementById("mediaPrev");
+    const next = document.getElementById("mediaNext");
+    if (!slider || !prev || !next) return;
+
+    function scrollAmount() {
+      const card = slider.querySelector(".media-card");
+      if (!card) return 320;
+      const styles = window.getComputedStyle(slider);
+      const gap = parseFloat(styles.columnGap || styles.gap || 0);
+      return card.getBoundingClientRect().width + gap;
+    }
+
+    prev.addEventListener("click", () => {
+      slider.scrollBy({ left: -scrollAmount(), behavior: "smooth" });
+    });
+
+    next.addEventListener("click", () => {
+      slider.scrollBy({ left: scrollAmount(), behavior: "smooth" });
+    });
+  })();
+</script>
+
 
 
 
