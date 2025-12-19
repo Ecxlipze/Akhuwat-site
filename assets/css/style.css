@@ -4039,3 +4039,61 @@
     font-size: 1.5rem;
   }
 }
+
+/* ===== Books Strips ===== */
+.book-strip--beige{ background:#f3dca8; }     /* top beige */
+.book-strip--white{ background:#ffffff; }
+.book-strip--light{ background:#f7f4dc; }     /* bottom light beige */
+
+.book-title{
+  font-weight: 700;
+  font-size: clamp(1.4rem, 2.2vw, 2rem);
+  margin: 0 0 .8rem;
+  color:#111;
+}
+
+.book-text{
+  color:#2f2f2f;
+  font-size: .92rem;
+  line-height: 1.7;
+  /* max-width: 62ch; */
+  margin-bottom: 1.2rem;
+}
+
+.book-btn{
+  border-radius: 999px;
+  padding: .55rem 1.2rem;
+  font-weight: 600;
+  font-size: .85rem;
+  border:0;
+}
+.book-btn--dark{
+  background:#2b2b2b;
+  color:#fff;
+}
+.book-btn--dark:hover{ background:#151515; color:#fff; }
+
+.book-img{
+  width: 100%;
+  height: auto;
+  display:inline-block;
+}
+
+
+/* Book 2 image in grey box */
+/* .book-imagebox{
+  background:#e9ebee;
+  border-radius: 16px;
+  padding: 2.2rem;
+  width: min(520px, 100%);
+} */
+
+/* Book 3 image in white card */
+/* .book-whitecard{
+  background:#fff;
+  border-radius: 18px;
+  padding: 2.2rem;
+  width: min(520px, 100%);
+  display:inline-flex;
+  justify-content:center;
+} */
