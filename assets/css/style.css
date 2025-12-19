@@ -3405,3 +3405,194 @@
     border-radius: 20px;
   }
 }
+
+/* ===== Founder Detail + Quote ===== */
+.founder-detail{
+  background:#fff;
+}
+
+.founder-detail__text{
+  color:#333;
+  font-size: 1.01rem;   /* matches tight screenshot text */
+  line-height: 1.65;
+}
+
+.founder-detail__text p{
+  margin-bottom: 1.2rem;
+}
+
+/* Quote card */
+.founder-quote{
+  max-width: 680px;
+  background:#f3f3f3;
+  border-radius: 18px;
+  padding: 2.6rem 2.2rem;
+  margin: 2.2rem auto;
+  text-align:center;
+}
+
+.founder-quote__text{
+  color:#2f9b4a;
+  font-size: clamp(1.1rem, 1.9vw, 1.55rem);
+  line-height: 1.45;
+  font-weight: 500;
+}
+
+.founder-quote__by{
+  color:#222;
+  font-size: .78rem;
+}
+
+.founder-quote__name{
+  font-weight: 600;
+  margin-bottom: .2rem;
+}
+
+.founder-quote__role{
+  opacity: .85;
+}
+
+.founder-detail__bottom{
+  color:#333;
+  font-size: 1.01rem;
+  line-height: 1.65;
+}
+
+/* Responsive */
+@media (max-width: 575.98px){
+  .founder-detail__text,
+  .founder-detail__bottom{
+    font-size: .9rem; /* readability on mobile */
+    text-align: justify;
+    padding: 1%;
+  }
+
+  .founder-quote{
+    padding: 1.6rem 1.2rem;
+  }
+}
+/* ===== Recent Insights Section ===== */
+.insights-section{
+  background:#f4f0d8; /* beige like reference */
+}
+
+.insights-topline{
+  height: 2px;
+  background: rgba(0,0,0,.20);
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.insights-title{
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  color:#111;
+  font-size: clamp(1.7rem, 3.2vw, 2.6rem);
+  line-height: 1.12;
+}
+
+/* Featured media */
+.insights-featured-media{
+  position: relative;
+  display:block;
+  border-radius: 18px;
+  overflow:hidden;
+  background:#ddd;
+  aspect-ratio: 16 / 9;
+}
+
+.insights-featured-media img{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+  display:block;
+}
+
+.insights-featured-content{
+  padding-top: .25rem;
+}
+
+.insights-featured-title{
+  font-weight: 700;
+  font-size: 2.95rem;
+  color:#111;
+  margin: 0 0 .6rem;
+}
+
+.insights-featured-text{
+  color:#4f4f4f;
+  font-size: 1.52rem;
+  line-height: 1.6;
+  margin-bottom: 1.2rem;
+}
+
+.insights-btn{
+  background:#2f2f2f;
+  color:#fff;
+  border-radius: 999px;
+  padding: .6rem 1.35rem;
+  border:0;
+}
+.insights-btn:hover{ background:#1f1f1f; color:#fff; }
+
+/* Cards */
+.insight-card{
+  background: transparent;
+}
+
+.insight-thumb{
+  position: relative;
+  display:block;
+  border-radius: 12px;
+  overflow:hidden;
+  background:#ddd;
+  aspect-ratio: 16 / 9;
+}
+
+.insight-thumb img{
+  width:100%;
+  height:100%;
+  object-fit: cover;
+  display:block;
+}
+
+.insight-title{
+  margin: .9rem 0 0;
+  font-weight: 600;
+  color:#111;
+  font-size: 1rem;
+  line-height: 1.35;
+}
+
+/* Play badge (YouTube-like) */
+.play-badge{
+  position:absolute;
+  left:50%;
+  top:50%;
+  width: 54px;
+  height: 38px;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+  background: rgba(255,0,0,.90);
+  box-shadow: 0 10px 24px rgba(0,0,0,.25);
+}
+.play-badge::after{
+  content:"";
+  position:absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-35%, -50%);
+  width: 0;
+  height: 0;
+  border-left: 12px solid #fff;
+  border-top: 8px solid transparent;
+  border-bottom: 8px solid transparent;
+}
+
+/* Responsive tweaks */
+@media (max-width: 991.98px){
+  .insights-featured-content{
+    padding-top: 0;
+  }
+}
+
