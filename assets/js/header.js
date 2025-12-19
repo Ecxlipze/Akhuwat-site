@@ -65,20 +65,7 @@
     });
   });
 
-  // Desktop search toggle
-  const searchBtn = document.getElementById("searchBtn");
-  const searchRow = document.getElementById("searchRow");
-  const searchInput = document.getElementById("searchInput");
-  searchBtn.addEventListener("click", () => {
-    searchRow.classList.toggle("open");
-    setMegaTop();
-    if(searchRow.classList.contains("open")) searchInput.focus();
-  });
 
-  // Donate demo
-  document.getElementById("donateBtn").addEventListener("click", () => {
-    alert("Donate button clicked (connect your donate link here).");
-  });
 
   // Desktop hover mega show/hide (your logic)
   const megaItems = document.querySelectorAll(".nav > li.has-mega");
