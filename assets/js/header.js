@@ -15,15 +15,18 @@
     about_chapters:{ title:"International Chapters", desc:"Our presence across regions", img:"https://images.unsplash.com/photo-1526772662000-3f88f10405ff?q=80&w=1200&auto=format&fit=crop" },
     about_reports: { title:"Akhuwat Reports", desc:"Impact, annual reports & publications", img:"https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1200&auto=format&fit=crop" },
 
-    prog_micro:    { title:"Microfinance", desc:"Interest-free microfinance for families", img:"https://images.unsplash.com/photo-1551836022-4c4c79ecde51?q=80&w=1200&auto=format&fit=crop" },
-    prog_education:{ title:"Education", desc:"Fee-free education initiatives", img:"https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1200&auto=format&fit=crop" },
-    prog_health:   { title:"Health", desc:"Health support and community care", img:"https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=1200&auto=format&fit=crop" },
-    prog_skills:   { title:"Skills & Livelihood", desc:"Training for sustainable income", img:"https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop" },
+    prog_micro:    { title:"Free Rashan Program", desc:"Immediate relief and support", img:"https://images.unsplash.com/photo-1551836022-4c4c79ecde51?q=80&w=1200&auto=format&fit=crop" },
+    prog_education:{ title:"E-Rozgaar", desc:"Fee-free education initiatives", img:"https://images.unsplash.com/photo-1523240795612-9a054b0db644?q=80&w=1200&auto=format&fit=crop" },
+    prog_health:   { title:"Free Eye camp", desc:"Health support and community care", img:"https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=1200&auto=format&fit=crop" },
+    prog_skills:   { title:"Interest Free Loan", desc:"Interest-free microfinance for families", img:"https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop" },
+    prog_meat:   { title:"Meat Distribution", desc:"Health support and community care", img:"https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=1200&auto=format&fit=crop" },
+    prog_cloth:   { title:"Free Cloth Program", desc:"Interest-free microfinance for families", img:"https://images.unsplash.com/photo-1522202176988-66273c2fd55f?q=80&w=1200&auto=format&fit=crop" },
 
-    news_updates:      { title:"Latest Updates", desc:"Announcements and latest news", img:"https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&w=1200&auto=format&fit=crop" },
+
+    news_updates:      { title:"Media Library", desc:"Announcements and latest news", img:"https://images.unsplash.com/photo-1587620962725-abab7fe55159?q=80&w=1200&auto=format&fit=crop" },
     news_stories:      { title:"Impact Stories", desc:"Stories from the field", img:"https://images.unsplash.com/photo-1520975682031-a99d3f3a6f5a?q=80&w=1200&auto=format&fit=crop" },
     news_publications: { title:"Publications", desc:"Research, reports & publications", img:"https://images.unsplash.com/photo-1450101499163-c8848c66ca85?q=80&w=1200&auto=format&fit=crop" },
-    news_media:        { title:"Media Kit", desc:"Brand assets and media resources", img:"https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop" },
+    news_media:        { title:"Donate Us", desc:"", img:"https://images.unsplash.com/photo-1498050108023-c5249f4df085?q=80&w=1200&auto=format&fit=crop" },
 
     join_volunteer:{ title:"Volunteer", desc:"Join as a volunteer", img:"https://images.unsplash.com/photo-1521737604893-d14cc237f11d?q=80&w=1200&auto=format&fit=crop" },
     join_careers:  { title:"Careers", desc:"Work with the mission", img:"https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1200&auto=format&fit=crop" },
