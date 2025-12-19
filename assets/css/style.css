@@ -3083,4 +3083,282 @@
   }
 }
 
+/* ===== Contact Us heading strip ===== */
+.contact-hero{
+  background:#eef6df; /* light greenish like reference */
+}
+
+.contact-hero__title{
+  color:#2f9b4a;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  font-size: clamp(2rem, 4.2vw, 4rem);
+}
+
+/* ===== Branch Network section ===== */
+.branch-section{
+  background:#0f6a3b;
+  color:#fff;
+}
+
+.branch-grid{
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.branch-kicker{
+  font-size: .95rem;
+  letter-spacing: .08em;
+  opacity: .9;
+  margin-bottom: .8rem;
+}
+
+.branch-title{
+  font-weight: 500;
+  line-height: 1.05;
+  font-size: clamp(2rem, 4vw, 3.3rem);
+}
+
+/* Dropdown pill (matches reference style) */
+.branch-select-wrap{
+  min-width: min(520px, 100%);
+  display:flex;
+  justify-content: flex-end;
+}
+
+.branch-select{
+  width: 100%;
+  max-width: 420px;
+  padding: .9rem 3.1rem .9rem 1.25rem;
+  border-radius: 999px;
+  border: 0;
+  outline: none;
+  font-size: 1rem;
+  background: #fff;
+  color:#111;
+
+  /* custom arrow */
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image:
+    linear-gradient(45deg, transparent 50%, #3f3f3f 50%),
+    linear-gradient(135deg, #3f3f3f 50%, transparent 50%);
+  background-position:
+    calc(100% - 22px) 52%,
+    calc(100% - 16px) 52%;
+  background-size: 6px 6px, 6px 6px;
+  background-repeat: no-repeat;
+}
+
+/* Responsive */
+@media (max-width: 991.98px){
+  .branch-grid{
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .branch-select-wrap{
+    width: 100%;
+    justify-content: flex-start;
+  }
+  .branch-select{
+    max-width: 520px;
+  }
+}
+
+/* ===== Branch list + map ===== */
+.branchmap-section{
+  background:#fff;
+}
+
+.branchmap-grid{
+  display:grid;
+  grid-template-columns: 1fr 1.1fr;
+  gap: 2rem;
+  align-items:start;
+}
+
+/* Left list container */
+.branchlist{
+  border: 1px solid #e7e7e7;
+  border-radius: 18px;
+  overflow:hidden;
+  background:#fff;
+  height: 520px; /* like screenshot */
+  display:flex;
+  flex-direction: column;
+}
+
+.branchlist-head{
+  display:flex;
+  align-items:center;
+  gap:.6rem;
+  padding: 1rem 1.1rem;
+  border-bottom: 1px solid #ededed;
+  font-size: 1.05rem;
+  color:#222;
+}
+
+.branchlist-phone-icon{
+  width: 28px;
+  height: 28px;
+  display:inline-flex;
+  align-items:center;
+  justify-content:center;
+}
+
+.branchlist-scroll{
+  overflow:auto;
+  padding: .4rem 0;
+}
+
+/* list items */
+.branchitem{
+  padding: 1.25rem 1.1rem;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.branchitem-title{
+  font-size: 1.45rem;
+  font-weight: 500;
+  color:#111;
+  margin-bottom: .25rem;
+}
+
+.branchitem-person{
+  color:#6b6b6b;
+  font-size: 1rem;
+  margin-bottom: .7rem;
+}
+
+.branchitem-phone{
+  color:#222;
+  font-size: 1.05rem;
+  display:flex;
+  align-items:center;
+  gap:.6rem;
+}
+.branchitem-phone::before{
+  content:"📞";
+  font-size: 1rem;
+}
+
+/* Right map */
+.branchmap{
+  border-radius: 22px;
+  overflow:hidden;
+  height: 520px;
+  border: 1px solid #e7e7e7;
+}
+
+.branchmap iframe{
+  width:100%;
+  height:100%;
+  border:0;
+  display:block;
+}
+
+/* Responsive */
+@media (max-width: 991.98px){
+  .branchmap-grid{
+    grid-template-columns: 1fr;
+  }
+  .branchlist, .branchmap{
+    height: 420px;
+  }
+}
+
+@media (max-width: 575.98px){
+  .branchlist, .branchmap{
+    height: 360px;
+    border-radius: 16px;
+  }
+  .branchitem-title{
+    font-size: 1.2rem;
+  }
+}
+/* ===== Akhuwat GIS ===== */
+.gis-section{
+  background:#eef2f5; /* light gray/blue like screenshot */
+}
+
+.gis-title{
+  color:#2f9b4a;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  font-size: clamp(2rem, 3.4vw, 3.1rem);
+  margin:0;
+}
+
+.gis-text{
+  color:#555;
+  font-size: 1rem;
+  line-height: 1.7;
+  max-width: 560px;
+}
+
+.gis-btn{
+  background:#2f2f2f;
+  color:#fff;
+  border-radius: 999px;
+  padding: .65rem 1.5rem;
+  border:0;
+}
+.gis-btn:hover{ background:#1f1f1f; color:#fff; }
+
+/* right image */
+.gis-imgwrap{
+  width: min(520px, 100%);
+  border-radius: 22px;
+  overflow:hidden;
+  background:#ddd;
+}
+
+.gis-img{
+  width:100%;
+  height: auto;
+  display:block;
+}
+
+/* ===== Green info strip (center aligned) ===== */
+.info-strip{
+  background:#0f6a3b;
+  color:#fff;
+}
+
+.info-block{
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+.info-title{
+  font-weight: 700;
+  font-size: 1.05rem;
+  margin-bottom: .6rem;
+}
+
+.info-text{
+  font-size: .95rem;
+  line-height: 1.65;
+  color: rgba(255,255,255,.92);
+}
+
+.info-text a{
+  color: rgba(255,255,255,.92);
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255,255,255,.25);
+}
+.info-text a:hover{
+  color:#fff;
+  border-bottom-color: rgba(255,255,255,.55);
+}
+
+/* Responsive */
+@media (max-width: 991.98px){
+  .gis-imgwrap{
+    margin-left: 0 !important;
+  }
+}
 
