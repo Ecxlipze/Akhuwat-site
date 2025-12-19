@@ -6,8 +6,8 @@
       --brand:#0f766e;
       --bg:#ffffff;
       --megaTop: 0px; /* JS override */
-      --green:#2f8f3a;
-      --green2:#1f7a2d;
+      --green:#0660AB;
+      --green2:#0765AD;
       --lime:#a7e254;
       --bg:#f4f9f3;
       --text:#222;
@@ -15,7 +15,6 @@
       --line:#666;
     }
     *{box-sizing:border-box}
-
 
     /* TOP BAR */
     .topbar{
@@ -432,7 +431,7 @@
 
     .newsletter-card button{
       align-self:flex-start;
-      background: var(--lime);
+      background: white;
       color:#1f1f1f;
       border:0;
       padding: 10px 22px;
@@ -462,7 +461,7 @@
       top:0;
       width: 100%;
       height: 2px;
-      background: rgba(103,185,111,.85);
+      background: #0660AB;
     }
 
     .footer-grid h4{
@@ -623,7 +622,7 @@
 
 /* Donate Button */
 .donate-btn-header {
-  background-color: #f4b400;
+  background-color: #0765AD;
   color: #000;
   padding: 12px 35px;
   font-size: 1.1rem;
@@ -665,7 +664,7 @@
 }
 
 .flood-title {
-  color: #035a01;
+  color: #0765AD;
   font-size: 2.8rem;
   font-weight: 700;
 }
@@ -678,7 +677,7 @@
 
 /* Reuse donate button but allow section tweak */
 .flood-response .donate-btn {
-  background-color: #f4b400;
+  background-color: #0765AD;
   color: #000;
   padding: 12px 40px;
   font-size: 1rem;
@@ -768,13 +767,13 @@
 }
 
 .cta-overlay {
-  background: #0F6742; /* green overlay */
+  background: #0765AD; /* green overlay */
   /* opacity: 50%; */
   padding: 80px 0;
 }
 
 .cta-title {
-  color: #90E114;
+  color: #ffffff;
   font-size: 0.9rem;
   font-weight: 600;
   margin-bottom: 5px;
@@ -793,7 +792,7 @@
 
 /* Button (reuse global donate button) */
 .donate-cta .donate-btn {
-  background-color: #f4b400;
+  background-color: #0765AD;
   color: #000;
   padding: 12px 40px;
   border-radius: 30px;
@@ -880,7 +879,7 @@
 
 /* OUTER GREEN SECTION */
 .donation-info-section {
-  background-color: #329A51;
+  background-color: #0765AD;
   padding: 50px 0;
 }
 
@@ -973,7 +972,7 @@
 }
 /* WHY AKHUWAT SECTION */
 .why-akhuwat {
-  background-color: #0f6b44;
+  background-color: #0765AD;
   padding: 80px 0;
 }
 
@@ -1172,7 +1171,7 @@
 .blog-tag {
   display: inline-block;
   font-size: 0.75rem;
-  color: #3a9c3a;
+  color: #0765AD;
   font-weight: 600;
   margin-bottom: 10px;
 }
@@ -1363,7 +1362,7 @@
 }
 
 .impact-title {
-  color: #0f6a3b;
+  color: #0765AD;
   font-weight: 700;
   font-size: clamp(1.25rem, 2.1vw, 1.75rem);
   
@@ -1381,7 +1380,7 @@
 }
 
 .impact-number {
-  color: #0f6a3b;
+  color: #0765AD;
   font-weight: 700;
   letter-spacing: -0.02em;
   font-size: clamp(2.6rem, 5vw, 4.2rem);
@@ -1389,7 +1388,7 @@
 }
 
 .impact-unit {
-  color: #0f6a3b;
+  color: #0765AD;
   font-weight: 700;
   font-size: clamp(.9rem, 1.2vw, 1.1rem);
   margin-top: .55rem; /* aligns like superscript-ish */
@@ -1397,7 +1396,7 @@
 
 .impact-label {
   margin-top: .35rem;
-  color: #0f6a3b;
+  color: #0765AD;
   font-size: clamp(.7rem, .9vw, .78rem);
   letter-spacing: .06em;
   text-transform: uppercase;
@@ -1411,7 +1410,7 @@
   border-radius: 999px;
   border: 1px solid rgba(15, 106, 59, .28);
   background: rgba(255, 255, 255, .25);
-  color: #0f6a3b;
+  color: #0765AD;
   backdrop-filter: blur(2px);
 }
 
@@ -1423,7 +1422,7 @@
 
 /* ===== Programs Section ===== */
 .programs-section{
-  background:#0f6a3b; /* deep green */
+  background:#0765AD; /* deep green */
   color:#fff;
 }
 
@@ -1468,7 +1467,7 @@
 }
 
 .programs-feature-title{
-  color:#0f6a3b;
+  color:#0765AD;
   font-weight:700;
   font-size: clamp(1.05rem, 1.3vw, 1.25rem);
   margin:0;
@@ -1489,7 +1488,7 @@
   display:inline-flex;
   align-items:center;
   justify-content:center;
-  color:#0f6a3b;
+  color:#0765AD;
   text-decoration:none;
   margin-left:auto;
 }
@@ -1537,7 +1536,7 @@
 
 .programs-mini-title{
   margin: 0 0 .25rem;
-  color:#0f6a3b;
+  color:#0765AD;
   font-weight:700;
   font-size: .85rem;
 }
@@ -1562,7 +1561,7 @@
   align-items:center;
   justify-content:center;
   text-decoration:none;
-  color:#0f6a3b;
+  color:#0765AD;
 }
 .programs-mini-link:hover{ background: rgba(15,106,59,.06); }
 
@@ -1723,7 +1722,7 @@
 
 /* ===== Media Section ===== */
 .media-section{
-  background:#0f6a3b;
+  background:#0765AD;
   color:#fff;
 }
 
@@ -1931,7 +1930,7 @@
   height: 24px;
   border-radius: 999px;
   border: 1px solid #1c7a3d;
-  color:#1c7a3d;
+  color:#0765AD;
   display:flex;
   align-items:center;
   justify-content:center;
@@ -1947,7 +1946,7 @@
 /* ===== GREEN CTA ===== */
 .cta-green{
   position: relative;
-  background:#0f6a3b;
+  background:#0765AD;
   color:#fff;
   overflow:hidden;
 }
@@ -1984,7 +1983,7 @@
 
 .cta-btn{
   background:#fff;
-  color:#0f6a3b;
+  color:#0765AD;
   border-radius: 999px;
   padding: .6rem 1.4rem;
   font-weight: 600;
@@ -1992,7 +1991,7 @@
 }
 .cta-btn:hover{
   opacity: .92;
-  color:#0f6a3b;
+  color:#0765AD;
 }
 /* ===== Shared section title (matches your screenshot style) ===== */
 .section-title{
@@ -2059,24 +2058,24 @@
 }
 
 .commit-card-title{
-  font-weight: 800;
-  font-size: 1.1rem;
+  font-weight: 700;
+  font-size: 1.21rem;
   margin: 0 0 .6rem;
   color:#fff;
 }
 
 .commit-card-text{
-  font-size: .78rem;
+  font-size: .88rem;
   line-height: 1.55;
   color: rgba(255,255,255,.92);
 }
 
 /* Colors (3 different greens like reference) */
 .commit-card--mission{
-  background: #2f9b4a;
+  background: #206FB1;
 }
 .commit-card--vision{
-  background: #0c5f3a;
+  background: #D9D9D9;
 }
 .commit-card--objective{
   background: #9acb45;
@@ -2304,12 +2303,12 @@
 }
 
 .principle-icon{
-  color:#1c8c43;
+  color:#0765AD;
   margin-bottom: .9rem;
 }
 
 .principle-title{
-  color:#1c8c43;
+  color:#0765AD;
   font-weight: 500;
   font-size: 1.45rem;
   margin: 0 0 .9rem;
@@ -2434,7 +2433,7 @@
   border-radius: 14px;
   backface-visibility: hidden;
   overflow:hidden;
-  background:#2f9b4a;
+  background:#0765AD;
   color:#fff;
   display:flex;
   align-items:center;
@@ -2566,7 +2565,7 @@
   backface-visibility: hidden;
   -webkit-backface-visibility: hidden;
 
-  background: #2f9b4a;
+  background:#0765AD;
   color: #fff;
 }
 
@@ -2647,7 +2646,7 @@
 
 /* ===== Our Leadership ===== */
 .leadership-section{
-  background:#0f6a3b; /* deep green */
+  background:#0765AD; /* deep green */
   color:#fff;
 }
 
@@ -2714,7 +2713,7 @@
 .edu-banner__bg{
   position:absolute;
   inset:0;
-  background-image: url("../images/edu-banner.jpg");
+  background-image: url("../images/freeloan.png");
   background-size: cover;
   background-position: center;
   transform: scale(1.03);
@@ -2802,7 +2801,7 @@
 }
 
 .donate-article__cat{
-  color:#2f9b4a;
+  color:#0765AD;
   display:inline-flex;
   align-items:center;
   gap:.35rem;
@@ -2812,7 +2811,7 @@
   width: 8px;
   height: 8px;
   border-radius: 50%;
-  background:#2f9b4a;
+  background:#0765AD;
   display:inline-block;
 }
 
@@ -2837,7 +2836,7 @@
 }
 
 .bank-panel__head{
-  background:#2f9b4a;
+  background:#0660AB;
   color:#fff;
   font-weight: 600;
   padding: .65rem .9rem;
@@ -2871,7 +2870,7 @@
 
 .bank-qr__hint{
   font-size: .85rem;
-  color:#2f9b4a;
+  color:#0765AD;
   font-weight: 600;
 }
 
@@ -2916,7 +2915,7 @@
 /* CTA */
 .bank-cta{
   margin-top: 1rem;
-  background:#2f9b4a;
+  background:#0765AD;
   color:#fff;
   border-radius: 6px;
   padding: .6rem 1rem;
@@ -2924,7 +2923,7 @@
   border:0;
 }
 .bank-cta:hover{
-  background:#23863d;
+  background:#0765AD;
   color:#fff;
 }
 
@@ -2952,7 +2951,7 @@
 }
 
 .contact-hero__title{
-  color:#2f9b4a;
+  color:#0765AD;
   font-weight: 600;
   letter-spacing: -0.02em;
   font-size: clamp(2rem, 4.2vw, 4rem);
@@ -2960,7 +2959,7 @@
 
 /* ===== Branch Network section ===== */
 .branch-section{
-  background:#0f6a3b;
+  background:#0765AD;
   color:#fff;
 }
 
@@ -3079,26 +3078,26 @@
 
 /* list items */
 .branchitem{
-  padding: 1.25rem 1.1rem;
+  padding: 9.25rem 5.1rem;
   border-bottom: 1px solid #f0f0f0;
 }
 
 .branchitem-title{
-  font-size: 1.45rem;
-  font-weight: 500;
+  font-size: 1.95rem;
+  font-weight: 700;
   color:#111;
   margin-bottom: .25rem;
 }
 
 .branchitem-person{
   color:#6b6b6b;
-  font-size: 1rem;
+  font-size: 1.35rem;
   margin-bottom: .7rem;
 }
 
 .branchitem-phone{
   color:#222;
-  font-size: 1.05rem;
+  font-size: 1.15rem;
   display:flex;
   align-items:center;
   gap:.6rem;
@@ -3187,7 +3186,7 @@
 
 /* ===== Green info strip (center aligned) ===== */
 .info-strip{
-  background:#0f6a3b;
+  background:#0660AB;
   color:#fff;
 }
 
