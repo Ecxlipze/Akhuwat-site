@@ -3362,3 +3362,46 @@
   }
 }
 
+/* ===== Founder Hero ===== */
+.founder-hero{
+  background:#d7cfb2; /* beige like reference */
+}
+
+.founder-hero__title{
+  font-weight: 600;
+  letter-spacing: -0.02em;
+  color:#2a2a2a;
+  line-height: 1.05;
+  font-size: clamp(2.2rem, 4.2vw, 4.2rem);
+  margin:0;
+}
+
+.founder-hero__text{
+  color:#5a5a5a;
+  font-size: clamp(1rem, 1.25vw, 1.2rem);
+  line-height: 1.75;
+  max-width: 56ch;
+}
+
+/* Image right */
+.founder-hero__imgwrap{
+  width: min(680px, 100%);
+  border-radius: 26px;
+  overflow:hidden;
+  background:#cfcfcf;
+}
+
+.founder-hero__img{
+  width:100%;
+  height: auto;
+  display:block;
+  object-fit: cover;
+}
+
+/* Responsive */
+@media (max-width: 991.98px){
+  .founder-hero__imgwrap{
+    margin-left: 0 !important;
+    border-radius: 20px;
+  }
+}
