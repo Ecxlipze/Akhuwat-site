@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Report</title>
+
+  <!-- Bootstrap 5.3.8 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+        rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+        crossorigin="anonymous">
+
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <link rel="stylesheet" href="assets/css/style.css">
+  <style>
+  
+  </style>
+</head>
+
+<body>
+<!-- MEDIA LIBRARY INTRO SECTION -->
+<section class="media-library">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-8 mx-auto text-center">
+
+        <h4 class="media-subtitle">Insights at a Glance</h4>
+        <h2 class="media-title">Reports</h2>
+        
+
+        <p class="media-text">
+          This page provides a comprehensive view of our efforts and achievements through accessible reports.
+        </p>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REPORTS / PUBLICATIONS TABS -->
+<section class="pubtabs-section">
+
+  <!-- top green tab bar -->
+  <div class="pubtabs-bar">
+    <div class="container">
+      <div class="pubtabs-nav" role="tablist" aria-label="Publications tabs">
+        <button class="pubtabs-link is-active" type="button" data-tab="research">Researches</button>
+        <button class="pubtabs-link" type="button" data-tab="progress">Progress Reports</button>
+        <button class="pubtabs-link" type="button" data-tab="financial">Financial Statements</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- content -->
+  <div class="container py-5">
+
+    <!-- TAB: Researches -->
+    <div class="pubtab-panel is-active" id="tab-research" role="tabpanel">
+      <h2 class="pubtabs-title mb-4">Researches</h2>
+
+      <div class="pubtable-wrap">
+        <div class="table-responsive">
+          <table class="table pubtable align-middle mb-0">
+            <thead>
+              <tr>
+                <th>Article Name</th>
+                <th>Article Title</th>
+                <th class="pub-col-year">Year</th>
+                <th class="pub-col-action">Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Muhammad Saleem Ahmed Ranjha</td>
+                <td>Pakistan at Seventy - Chapter Akhuwat New Microcredit Stories</td>
+                <td class="pub-col-year">2019</td>
+                <td class="pub-col-action"><a class="pub-readmore" href="#">Read<br>More</a></td>
+              </tr>
+              <tr>
+                <td>Maazullah Khan &amp; Arjun S. Bedi</td>
+                <td>Returns to Interest-free Microcredit: evidence from a Randomized Experiment in Pakistan</td>
+                <td class="pub-col-year">2021</td>
+                <td class="pub-col-action"><a class="pub-readmore" href="#">Read<br>More</a></td>
+              </tr>
+              <tr>
+                <td>Adnan Zikri Jaafar</td>
+                <td>An Inquiry into the Sources of Funding for Qard Hasan Based MFIs: A Case Study of Akhuwat</td>
+                <td class="pub-col-year">2018</td>
+                <td class="pub-col-action"><a class="pub-readmore" href="#">Read<br>More</a></td>
+              </tr>
+              <tr>
+                <td>Zahid Mustafa, Nodirbek Ismailov</td>
+                <td>Entrepreneurship and Microfinance-A tool for empowerment of poor-Case of Akhuwat, Pakistan</td>
+                <td class="pub-col-year">2008</td>
+                <td class="pub-col-action"><a class="pub-readmore" href="#">Read<br>More</a></td>
+              </tr>
+              <tr>
+                <td>Ussama Ahmed Khan</td>
+                <td>Akhuwat: Fighting Poverty with Interest-Free Microfinance</td>
+                <td class="pub-col-year">2016</td>
+                <td class="pub-col-action"><a class="pub-readmore" href="#">Read<br>More</a></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- pagination -->
+        <div class="pub-pagination">
+          <button class="pub-page-btn" type="button" aria-label="Previous">‹</button>
+          <button class="pub-page-btn is-active" type="button">1</button>
+          <button class="pub-page-btn" type="button">2</button>
+          <button class="pub-page-btn" type="button" aria-label="Next">›</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- TAB: Progress Reports (placeholder for next design) -->
+    <div class="pubtab-panel" id="tab-progress" role="tabpanel">
+      <h2 class="pubtabs-title mb-4">Progress Reports</h2>
+      <div class="pub-placeholder">
+        Add Progress Reports layout here.
+      </div>
+    </div>
+
+    <!-- TAB: Financial Statements (placeholder for next design) -->
+    <div class="pubtab-panel" id="tab-financial" role="tabpanel">
+      <h2 class="pubtabs-title mb-4">Financial Statements</h2>
+      <div class="pub-placeholder">
+        Add Financial Statements layout here.
+      </div>
+    </div>
+
+  </div>
+</section>
+<script>
+  (function () {
+    const buttons = document.querySelectorAll(".pubtabs-link");
+    const panels = {
+      research: document.getElementById("tab-research"),
+      progress: document.getElementById("tab-progress"),
+      financial: document.getElementById("tab-financial"),
+    };
+
+    buttons.forEach(btn => {
+      btn.addEventListener("click", () => {
+        const key = btn.getAttribute("data-tab");
+
+        // active button
+        buttons.forEach(b => b.classList.remove("is-active"));
+        btn.classList.add("is-active");
+
+        // active panel
+        Object.values(panels).forEach(p => p.classList.remove("is-active"));
+        panels[key]?.classList.add("is-active");
+      });
+    });
+  })();
+</script>
+
+
+
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('animate');
+      }
+    });
+  }, { threshold: 0.2 });
+
+  document.querySelectorAll('.flood-response .row').forEach(el => {
+    el.classList.add('fade-up');
+    observer.observe(el);
+  });
+</script>
+
+
+
+
+</body>
+</html>
