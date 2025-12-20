@@ -4,9 +4,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Meat Distribution</title>
-    <link rel="icon" type="image/x-icon" href="assets/images/logoo.png">
-
+  <title>Tabeer Foundation</title>
+  <link rel="icon" type="image/x-icon" href="assets/images/logoo.png">
 
   <!-- Bootstrap 5.3.8 -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -23,6 +22,7 @@
 </head>
 
 <body>
+
   <!-- TOP BAR -->
   <div class="topbar">
     <div class="topbar-wrap">
@@ -176,8 +176,7 @@
               </div>
             </div>
           </li>
-
-                    <li class="has-mega" data-menu="flood">
+          <li class="has-mega" data-menu="flood">
    <a href="dialysis.html"
      style="
        color:#0765AD;
@@ -303,73 +302,27 @@
     </div>
   </aside>
 
-  <section class="hero-slider">
-    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
-      <div class="carousel-inner">
-        <!-- Slide 1 -->
-        <div class="carousel-item active hero-slide"
-          style="background-image: url('assets/images/freemeat.png'); height: 50vh;">
-          <div class="hero-overlay">
-            <div class="hero-content text-center">
-              <h1>MEAT DISTRIBUTION</h1>
-              <p>Spreading Joy Through Sacrificial Giving</p>
-              <!-- <a href="#" class="btn donate-btn">Donate Now</a> -->
-            </div>
-          </div>
-        </div>
-      </div>
-  </section>
+<!-- EDUCATION BANNER -->
+<section class="edu-banner">
+  <div class="edu-banner__bg" style="background-image: url(assets/images/OIP.png);" aria-hidden="true"></div>
+  <div class="edu-banner__overlay" aria-hidden="true"></div>
 
+  <div class="container">
+    <div class="edu-banner__content text-center">
+      <!-- top logo -->
+      
+      <h2 class="edu-banner__title"> <br>Coming Soon</h2>
+      <div class="edu-banner__divider"></div>
 
-  <!-- FLOOD RELIEF RESPONSE SECTION -->
-  <section class="flood-response">
-    <div class="flood-overlay">
-      <div class="container">
-        <div class="row align-items-center">
-
-          <!-- Left Content -->
-          <div class="col-lg-5 mb-3 mb-lg-0">
-            <h2 class="flood-title">MEAT <br> DISTRIBUTION</h2>
-          </div>
-
-          <!-- Right Content -->
-          <div class="col-lg-7">
-            <p class="flood-text">
-              The Meat Distribution Program is a key humanitarian initiative by Tabeer Foundation, designed to ensure
-              that low-income and underserved families can partake in the blessings of Qurbani. Every year, during
-              Eid-ul-Adha, the foundation organizes the ethical and hygienic slaughter of sacrificial animals, followed
-              by the systematic distribution of fresh meat to families who cannot afford to offer Qurbani
-              themselves.This program not only provides nutritious food to communities facing food insecurity but also
-              upholds the values of compassion, equality, and inclusion. Through the generosity of our donors, Tabeer
-              Foundation brings dignity and joy to thousands of households, ensuring that no one is left out during this
-              sacred occasion.</p>
-
-            <!-- <a href="#" class="btn donate-btn mt-3">Donate Now</a> -->
-          </div>
-
-        </div>
-      </div>
+    
     </div>
-  </section>
+  </div>
+</section>
 
 
-  <!-- DONATE CTA SECTION -->
-  <section class="donate-cta">
-    <div class="cta-overlay">
-      <div class="container">
-        <div class="row">
-          <div class="col text-center">
-
-            <h5 class="cta-title">Feeding Families,<br> Empowering Lives</h5>
-
-
-
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
+ 
+ 
+ 
 
   <!-- GREEN CTA SECTION -->
   <section class="cta-green">
@@ -377,7 +330,10 @@
 
     <div class="container py-5">
       <div class="cta-inner text-center mx-auto">
-        <a href="#" class="btn cta-btn">Donate</a>
+        <div class="cta-small">GIVE US A HAND</div>
+        <h2 class="cta-title mb-3">Every Contribution Counts <br>
+          Be a Part of the Change</h2>
+        <a href="donate.html" class="btn cta-btn">Donate</a>
       </div>
     </div>
   </section>
@@ -385,10 +341,11 @@
 
   <!-- footer -->
   <!-- DONATE -->
-  <!-- <a class="donate-btn" href="donate.html">Donate</a> -->
+  <!-- <a class="donate-btn" href="#donate">Donate</a> -->
 
   <!-- FOOTER -->
- <footer class="site-footer">
+ <!-- FOOTER -->
+  <footer class="site-footer">
     <div class="footer-inner">
 
       <div class="footer-top">
@@ -468,24 +425,59 @@
     <i class="fa-solid fa-angle-up"></i>
   </button>
 
+
   <!-- Bootstrap JS -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
   <script src="assets/js/header.js"></script>
   <script>
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('animate');
-        }
+    (function () {
+      const slider = document.getElementById("programsSlider");
+      const prevBtn = document.getElementById("programsPrev");
+      const nextBtn = document.getElementById("programsNext");
+
+      if (!slider || !prevBtn || !nextBtn) return;
+
+      function getScrollAmount() {
+        // scroll by ~one card
+        const card = slider.querySelector(".programs-mini");
+        if (!card) return 300;
+        const styles = window.getComputedStyle(slider);
+        const gap = parseFloat(styles.columnGap || styles.gap || 0);
+        return card.getBoundingClientRect().width + gap;
+      }
+
+      prevBtn.addEventListener("click", () => {
+        slider.scrollBy({ left: -getScrollAmount(), behavior: "smooth" });
       });
-    }, { threshold: 0.2 });
 
-    document.querySelectorAll('.flood-response .row').forEach(el => {
-      el.classList.add('fade-up');
-      observer.observe(el);
-    });
+      nextBtn.addEventListener("click", () => {
+        slider.scrollBy({ left: getScrollAmount(), behavior: "smooth" });
+      });
+    })();
+  </script>
+  <script>
+    (function () {
+      const slider = document.getElementById("mediaSlider");
+      const prev = document.getElementById("mediaPrev");
+      const next = document.getElementById("mediaNext");
+      if (!slider || !prev || !next) return;
 
+      function scrollAmount() {
+        const card = slider.querySelector(".media-card");
+        if (!card) return 320;
+        const styles = window.getComputedStyle(slider);
+        const gap = parseFloat(styles.columnGap || styles.gap || 0);
+        return card.getBoundingClientRect().width + gap;
+      }
 
+      prev.addEventListener("click", () => {
+        slider.scrollBy({ left: -scrollAmount(), behavior: "smooth" });
+      });
+
+      next.addEventListener("click", () => {
+        slider.scrollBy({ left: scrollAmount(), behavior: "smooth" });
+      });
+    })();
 
 
 
