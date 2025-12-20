@@ -1289,8 +1289,9 @@
 }
 
 .hero-img {
-  height: min(72vh, 720px);
-  object-fit: cover;
+  height: min(90vh, 920px);
+  /* object-fit: cover; */
+
 }
 
 @media (max-width: 991.98px) {
